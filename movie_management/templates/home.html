@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div class="container">
+    <h1>Movie List</h1>   
+
+    <!-- List using Bootstrap classes -->
+    <ul class="list-group list-container">
+        {% for item in movies %}
+            <li class="list-group-item">title :{{ item.title }}</li>
+            <li class="list-group-item">popularity: {{ item.popularity }}</li>
+            <li class="list-group-item">id:{{ item.id }}</li>
+            <li class="list-group-item">overview: {{ item.overview }}</li>
+            <li class="list-group-item">rating: {{ item.rating }}</li>
+
+        {% endfor %}
+    </ul>
+</div>
